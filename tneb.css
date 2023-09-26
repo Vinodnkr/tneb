@@ -4,9 +4,14 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 h1 {
@@ -32,8 +37,8 @@ label {
 }
 
 input[type="text"] {
-    padding: 25px;
-    margin: 50px;
+    padding: 15px;
+    margin: 20px;
     height: 50px;
     width: 200px;
     font-size: 30px;
@@ -41,7 +46,7 @@ input[type="text"] {
 
 input[type="button"] {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 30px;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -74,6 +79,8 @@ p {
 table {
     border-collapse: collapse;
     width: 100%;
+    max-width: 600px;
+    text-align: center;
 }
 
 th,
@@ -85,4 +92,16 @@ td {
 
 th {
     background-color: #f2f2f2;
+}
+
+#breakdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px; /* Optional: Limit the table width if needed */
 }
