@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TNEB Calculator</title>
+</head>
+
+<body>
+    <h1>TNEB NEW REVISED Unit(kWh) to Rupees Calculator</h1>
+    <h2>NEW REVISED CALCULATOR</h2>
+    <form class="container-entry">
+        <label for="income">Enter your Electricity unit:</label>
+        <input type="number" id="income" placeholder="Enter Unit" name="income" required onkeydown="if (event.key === 'Enter') {event.preventDefault(); calculateTax();}">
+        <input type="button" value="Calculate Amount" onclick="calculateTax()">
+    </form>
+    <p id="result"></p>
+    <div id="breakdown" style="display: none;">
+        <h2>Breakdown:</h2>
+        <table id="breakdownTable">
+            <tr>
+                <th>Unit Slab</th>
+                <th>Units</th>
+                <th>Rate</th>
+                <th>Amount</th>
+            </tr>
+        </table>
+        <ul id="breakdownList"></ul>
+    </div>
+    <footer>
+        <h4>&copy; 2023. All Rights Reserved.</h4>
+    </footer>
+
+
+</body>
+
+</html>
