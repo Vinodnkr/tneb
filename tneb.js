@@ -10,7 +10,7 @@ function calculateTax() {
     }
 
     const breakdownTable = document.getElementById('breakdownTable');
-    breakdownTable.innerHTML = '<tr><th>Unit Slab</th><th>Unit</th><th>Rate per Unit (Rs)</th><th>Amount</th></tr>'; // Clear previous breakdown
+    breakdownTable.innerHTML = '<tr><th>Unit Slab</th><th>Unit</th><th>Rate(Rs)</th><th>Amount</th></tr>'; // Clear previous breakdown
 
 
     let st = 0;
